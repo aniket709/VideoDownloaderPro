@@ -1,0 +1,154 @@
+/*
+.facebook-page {
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1877f2, #0e52b1);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+.facebook-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #dfe3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.facebook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.facebook-form input {
+  flex: 1;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+}
+
+.facebook-form button {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.facebook-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+.facebook-results {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+*/
+
+
+/* Facebook.css */
+.facebook-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1b6fed; /* Facebook light gray */
+  color: whitesmoke; /* Adjusted text color for contrast */
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem; /* Adjusted from 20rem */
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 450px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #3b5998; /* Facebook blue border */
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.download-button {
+  background-color: #3b5998 ;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background-color: #3b5998; /* Facebook blue on hover */
+}
+
+.download-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d32f2f; /* Red for errors */
+  margin-top: 10px;
+}

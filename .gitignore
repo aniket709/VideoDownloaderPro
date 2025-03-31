@@ -1,0 +1,32 @@
+# Node modules (for backend and frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs and error files
+logs/
+*.log
+error.log
+combined.log
+
+# Build files
+dist/
+build/
+
+# Editor/OS specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Instagram cookies file (sensitive data)
+backend/instagram_cookies.txt
+# Ignore downloads folder
+downloads/
+backend/downloads/

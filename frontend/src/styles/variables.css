@@ -1,0 +1,30 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #FF6F61; /* Coral for buttons and accents */
+  --primary-dark: #E65A50; /* Darker shade for hover effects */
+  --secondary-color: #FFD700; /* Gold for highlights */
+  
+  /* Background Colors */
+  --background-color: #8B4513; /* Brownish-red background (SaddleBrown) */
+  --card-background: rgba(255, 255, 255, 0.95); /* Slightly opaque white for cards */
+  --text-color: #2D2D2D; /* Dark Gray for text */
+  --text-light: #555; /* Lighter Gray for secondary text */
+  
+  /* Spacing and Sizing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --border-radius: 12px;
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-neumorphic: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+  
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
