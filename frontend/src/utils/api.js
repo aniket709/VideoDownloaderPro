@@ -1,5 +1,5 @@
 // src/utils/api.js
-const API_BASE_URL = 'http://localhost:3000'; // Match your backend port
+const API_BASE_URL = 'https://reelsdownloader-47mb.onrender.com/'; // Match your backend port
 
 export const downloadFromPlatform = async (platform, url, type = 'video') => {
   const endpoint = `${API_BASE_URL}/api/${platform}?url=${encodeURIComponent(url)}&type=${type}`;

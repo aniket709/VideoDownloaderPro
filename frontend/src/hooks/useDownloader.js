@@ -51,7 +51,7 @@ const useDownloader = () => {
       setError(null);
 
       // Set the endpoint based on the platform (Facebook, Instagram, YouTube)
-      const endpoint = `http://localhost:3000/api/${platform}/download/${type}`;
+      const endpoint = `https://reelsdownloader-47mb.onrender.com/api/${platform}/download/${type}`
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -69,7 +69,7 @@ const useDownloader = () => {
       if (!data.filePath) throw new Error("Invalid file path received");
 
       // Return the URL of the downloaded file
-      return `http://localhost:3000/downloads/${data.filePath.split('/').pop()}`;
+      return `https://reelsdownloader-47mb.onrender.com/${data.filePath.split('/').pop()}`;
     } catch (err) {
       // Set error message in case of failure
       setError(err.message);

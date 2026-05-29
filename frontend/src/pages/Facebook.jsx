@@ -13,7 +13,7 @@ const Facebook = () => {
       type === 'video' ? setIsLoadingVideo(true) : setIsLoadingAudio(true);
       setError(null);
 
-      const endpoint = `http://localhost:3000/api/facebook/download/${type}`;
+      const endpoint = `https://reelsdownloader-47mb.onrender.com/api/facebook/download/${type}`;
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -28,7 +28,7 @@ const Facebook = () => {
       const data = await response.json();
       if (!data.filePath) throw new Error("Invalid file path received");
 
-      const downloadLink = `http://localhost:3000/downloads/${data.filePath.split('/').pop()}`;
+      const downloadLink = `https://reelsdownloader-47mb.onrender.com/downloads/${data.filePath.split('/').pop()}`;
       window.location.href = downloadLink;
 
     } catch (err) {
