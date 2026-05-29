@@ -32,6 +32,12 @@ async function startServer() {
         // Error handling
         app.use(errorHandler);
 
+        app.get("/",(req,res)=>{
+            res.status(200).json({
+                msg:"hi from the server"
+            })
+        })
+
         // Start server
         app.listen(config.PORT, () => {
             console.log(`Server running on port ${config.PORT}`);
