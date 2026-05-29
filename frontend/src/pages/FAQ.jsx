@@ -16,7 +16,7 @@ const FAQ = () => {
 
       {/* FAQ Content */}
       <div className="faq-content">
-        <h1>Frequently Asked Questions</h1>
+        {/* <h1>Frequently Asked Questions</h1> */}
         
         <div className="faq-item">
           <h3>❓ How do I download videos?</h3>

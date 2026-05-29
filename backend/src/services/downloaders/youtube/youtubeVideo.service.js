@@ -8,7 +8,9 @@ export default class YoutubeVideoService extends BaseDownloader {
         const outputPath = path.join(this.outputDir, `youtube_video_${Date.now()}.mp4`);
         await youtubedl(this.url, {
             output: outputPath,
-            format: 'bestvideo+bestaudio',
+            format: "bv*+ba/b",
+            addHeader: ["referer:youtube.com"],
+            extractorArgs: "youtube:player_client=android",
             mergeOutputFormat: 'mp4'
         });
         return { success: true, filePath: outputPath };

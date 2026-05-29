@@ -11,7 +11,7 @@ export default class InstagramVideoService extends BaseDownloader {
         try {
             await youtubedl(this.url, {
                 output: outputPath,
-                format: 'bestvideo+bestaudio',
+                format: "bv*+ba/b",
                 mergeOutputFormat: 'mp4',
                 noCheckCertificate: true,
                 retries: 3

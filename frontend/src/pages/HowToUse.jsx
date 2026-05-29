@@ -16,7 +16,7 @@ const HowToUse = () => {
 
       {/* Main Content */}
       <div className="content">
-        <h1>How to Use VideoDownloaderPro</h1>
+        {/* <h1>How to Use VideoDownloaderPro</h1> */}
         <p>Follow these simple steps to download your favorite videos:</p>
         
         <div className="steps">

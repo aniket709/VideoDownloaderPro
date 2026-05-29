@@ -9,7 +9,10 @@ export default class YoutubeAudioService extends BaseDownloader {
         await youtubedl(this.url, {
             output: outputPath,
             extractAudio: true,
-            audioFormat: 'mp3'
+            audioFormat: 'mp3',
+            format: "bv*+ba/b",
+            addHeader: ["referer:youtube.com"],
+            extractorArgs: "youtube:player_client=android",
         });
         return { success: true, filePath: outputPath };
     }
