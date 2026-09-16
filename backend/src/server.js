@@ -5,7 +5,7 @@ import errorHandler from './middleware/errorHandler.js';
 import { ensureDir } from './utils/fileHelpers.js';
 import cors from "cors";
 import dotenv from "dotenv";
-import path from "path";  // ✅ Import path
+import path from "path";  
 
 dotenv.config();
 
