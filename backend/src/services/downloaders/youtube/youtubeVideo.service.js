@@ -5,6 +5,7 @@ import path from 'path';
 
 export default class YoutubeVideoService extends BaseDownloader {
     async download() {
+        console.log("YouTube URL received:", this.url);
         const outputPath = path.join(this.outputDir, `youtube_video_${Date.now()}.mp4`);
         await youtubedl(this.url, {
             output: outputPath,
